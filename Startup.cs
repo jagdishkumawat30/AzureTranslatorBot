@@ -12,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 
 using AzureTranslatorBot.Bots;
 using AzureTranslatorBot.Dialogs;
+using AzureTranslatorBot.Utilities;
 
 namespace AzureTranslatorBot
 {
@@ -33,6 +34,8 @@ namespace AzureTranslatorBot
 
             // Create the Conversation state. (Used by the Dialog system itself.)
             services.AddSingleton<ConversationState>();
+
+            services.AddSingleton<TranslatorRepository>();
 
             // The MainDialog that will be run by the bot.
             services.AddSingleton<MainDialog>();
