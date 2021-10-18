@@ -1,4 +1,4 @@
-# BotFrameworkUsableTemplate
+# Azure Translator Chatbot
 
 Bot Framework v4 core bot sample.
 
@@ -43,11 +43,11 @@ Once you created the LUIS model, update `appsettings.json` with your `LuisAppId`
 
 ## To try this sample
 
-- In a terminal, navigate to `BotFrameworkUsableTemplate`
+- In a terminal, navigate to `AzureTranslatorBot`
 
     ```bash
     # change into project folder
-    cd BotFrameworkUsableTemplate
+    cd AzureTranslatorBot
     ```
 
 - Run the bot from a terminal or from Visual Studio, choose option A or B.
@@ -63,8 +63,8 @@ Once you created the LUIS model, update `appsettings.json` with your `LuisAppId`
 
   - Launch Visual Studio
   - File -> Open -> Project/Solution
-  - Navigate to `BotFrameworkUsableTemplate` folder
-  - Select `BotFrameworkUsableTemplate.csproj` file
+  - Navigate to `AzureTranslatorBot` folder
+  - Select `AzureTranslatorBot.csproj` file
   - Press `F5` to run the project
 
 ## Testing the bot using Bot Framework Emulator
