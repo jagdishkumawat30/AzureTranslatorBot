@@ -85,6 +85,9 @@ namespace AzureTranslatorBot.Dialogs
                     string supportedLanguages = await _translatorRepository.GetSupportedLanguage("https://api.cognitive.microsofttranslator.com/languages?api-version=3.0&scope=translation");
                     await stepContext.Context.SendActivityAsync(MessageFactory.Text(supportedLanguages), cancellationToken);
                     return await stepContext.NextAsync(null, cancellationToken);
+
+                case "Translate Language":
+                    return await stepContext.BeginDialogAsync(nameof(TranslateLanguageDialog), null, cancellationToken);
             }
             return await stepContext.NextAsync(null, cancellationToken);
         }
